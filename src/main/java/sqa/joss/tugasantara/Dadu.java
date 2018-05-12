@@ -1,8 +1,9 @@
 package sqa.joss.tugasantara;
 
+import javax.swing.*;
 import java.util.Random;
 
-public final class Dadu {
+public final class Dadu extends JFrame {
     public static final int DEFAULT_SISI = 6;
 
     private static Random randGenerator = new Random();
@@ -12,10 +13,14 @@ public final class Dadu {
 
     public Dadu() {
         this(DEFAULT_SISI);
+        setSize(400,500);
+        setVisible(true);
     }
 
     public Dadu(int numSides) {
         this.jumSisi = numSides;
+        setSize(400,500);
+        setVisible(true);
     }
 
     public int lempar() {
