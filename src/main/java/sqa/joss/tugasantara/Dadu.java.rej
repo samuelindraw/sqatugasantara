@@ -1,0 +1,16 @@
+diff a/src/main/java/sqa/joss/tugasantara/Dadu.java b/src/main/java/sqa/joss/tugasantara/Dadu.java	(rejected hunks)
+@@ -13,10 +13,14 @@
+ 
+     public Dadu() {
+         this(DEFAULT_SISI);
++        setSize(400,500);
++        setVisible(true);
+     }
+ 
+     public Dadu(int numSides) {
+         this.jumSisi = numSides;
++        setSize(400,500);
++        setVisible(true);
+     }
+ 
+     public int lempar() {
