@@ -49,6 +49,7 @@ public final class Dadu extends JFrame {
     	super.paint(g);
     	int randomnumber, randomnumber2, randomnumber3;
     	randomnumber = randGenerator.nextInt(255);
+    	
     	randomnumber2 = randGenerator.nextInt(255);
     	randomnumber3 = randGenerator.nextInt(255);
     	
