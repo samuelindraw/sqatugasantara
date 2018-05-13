@@ -11,11 +11,6 @@ public class TugasantaraApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TugasantaraApplication.class, args);
 		
-		Dadu dadu = new Dadu(8);
-		dadu.lempar();
-		
-		dadu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 	}
 	
 }
