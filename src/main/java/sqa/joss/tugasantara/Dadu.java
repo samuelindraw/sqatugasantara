@@ -1,6 +1,5 @@
 package sqa.joss.tugasantara;
 
-import javax.management.StringValueExp;
 import javax.swing.*;
 
 import java.awt.Color;
@@ -23,7 +22,8 @@ public final class Dadu extends JFrame {
 
     public Dadu(int numSides) {
         this.jumSisi = numSides;
-        setSize(260,165);
+        
+        setSize(260, 165);
         setVisible(true);
     }
 
@@ -45,28 +45,18 @@ public final class Dadu extends JFrame {
     public String toString() {
         return "Jumlah sisi dadu: " + getJumSisi() + " hasil: " + getHasil();
     }
+    public int randomWarna()
+    {
+      int randomnumber = randGenerator.nextInt(255);
+      return randomnumber;
+    }
+    
     public void paint(Graphics g) {
     	super.paint(g);
-    	int randomnumber, randomnumber2, randomnumber3;
-    	randomnumber = randGenerator.nextInt(255);
-    	
-    	randomnumber2 = randGenerator.nextInt(255);
-    	randomnumber3 = randGenerator.nextInt(255);
-    	
-    	Color myWhite = new Color(randomnumber,randomnumber2,randomnumber3);//color random 
-    	g.drawString(String.valueOf(randomnumber),77,120);
-    	g.drawString(String.valueOf(randomnumber2),107,220);
-    	g.drawString(String.valueOf(randomnumber3),137,120);
     	
     	
-    	g.setColor(myWhite);
-    	g.fillRect(20, 40, 220, 50);
     	
-    	g.setColor(Color.BLUE);
-    	g.drawRect(20,100,220,50);
     	
-    	g.setColor(Color.RED);
-    	g.drawString(toString(),57,60);
     }
 }
 
